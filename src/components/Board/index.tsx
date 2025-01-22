@@ -1,9 +1,20 @@
-
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { drawObject, IObjectBody, generateRandomPosition, clearBoard, hasSnakeCollided } from "../utilities";
 import { IGlobalState } from "@/Redux/reducer";
-import { increaseSnake, INCREMENT_SCORE, makeMove, MOVE_DOWN, MOVE_LEFT, MOVE_RIGHT, MOVE_UP, RESET_SCORE, resetGame, scoreUpdates, stopGame } from "@/Redux/action";
+import {
+  increaseSnake,
+  INCREMENT_SCORE,
+  makeMove,
+  MOVE_DOWN,
+  MOVE_LEFT,
+  MOVE_RIGHT,
+  MOVE_UP,
+  RESET_SCORE,
+  resetGame,
+  scoreUpdates,
+  stopGame,
+} from "@/Redux/action";
 import Instruction from "../Instruction";
 
 export interface CanvasBoard {
